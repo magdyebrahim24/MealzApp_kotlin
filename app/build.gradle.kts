@@ -52,9 +52,17 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    // Hilt For Dependency Injection
+    // Dagger Hilt For Dependency Injection
     implementation("com.google.dagger:hilt-android:2.28-alpha")
     kapt("com.google.dagger:hilt-android-compiler:2.40.5")
+
+    // Retrofit
+    implementation( "com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
+
+    implementation(project(":domain"))
+    implementation(project(":data"))
 
 
 }
