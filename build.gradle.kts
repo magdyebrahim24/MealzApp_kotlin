@@ -5,6 +5,6 @@ plugins {
     id("com.android.library") version "8.1.0" apply false
 
     // Dagger Hilt For Dependency Injection
-    id ("com.google.dagger.hilt.android") version "2.41" apply false
+    id("com.google.dagger.hilt.android") version "2.44" apply false
 
 }

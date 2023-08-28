@@ -5,10 +5,10 @@ import com.example.domain.use_cases.GetMealsUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.components.SingletonComponent
 
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object UseCaseModule {
     @Provides
     fun provideGetMealsUseCase(mealsRepo: MealsRepo): GetMealsUseCase {
