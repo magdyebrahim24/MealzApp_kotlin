@@ -40,6 +40,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    viewBinding {
+        enable = true
+    }
 }
 hilt {
     enableAggregatingTask = true
@@ -71,6 +74,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
     implementation ("androidx.fragment:fragment-ktx:1.5.7")
+
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
 
 

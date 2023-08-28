@@ -1,6 +1,6 @@
 package com.example.domain.use_cases
 
-import com.example.domain.models.Category
+import com.example.domain.models.MealzEntity
 import com.example.domain.repo.MealsRepo
 
 /*
@@ -16,5 +16,5 @@ class GetMealsUseCase(private val repo: MealsRepo) {
     // has return type List<Category>
     // which implements getMealsFromRemote fun
     // suspend like async
-    suspend operator fun invoke(): List<Category> = repo.getMealsFromRemote()
+    suspend operator fun invoke(): MealzEntity = repo.getMealsFromRemote()
 }
