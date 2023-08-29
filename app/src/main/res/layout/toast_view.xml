@@ -35,4 +35,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showToastBTN" />
+
+    <Button
+        android:id="@+id/backBTN"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_margin="34dp"
+        android:backgroundTint="@color/darkGrey"
+        android:fontFamily="sans-serif-black"
+        android:text="Go Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

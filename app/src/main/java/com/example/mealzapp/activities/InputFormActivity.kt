@@ -1,6 +1,7 @@
 package com.example.mealzapp.activities
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mealzapp.databinding.InputFormBinding
 
