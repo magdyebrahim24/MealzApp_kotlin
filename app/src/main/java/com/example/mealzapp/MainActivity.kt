@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mealzapp.activities.CounterActivity
 import com.example.mealzapp.activities.InputFormActivity
+import com.example.mealzapp.activities.PermissionActivity
+import com.example.mealzapp.activities.PickImageActivity
 import com.example.mealzapp.activities.ToastActivity
 import com.example.mealzapp.databinding.ActivityMainBinding
 import com.example.mealzapp.meals.MealsActivity
@@ -24,28 +26,40 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.toastViewBTN.setOnClickListener {
-            Intent(this,ToastActivity::class.java).also {
+            Intent(this, ToastActivity::class.java).also {
                 startActivity(it)
             }
         }
         binding.counterViewBTN.setOnClickListener {
-            Intent(this,CounterActivity::class.java).also {
+            Intent(this, CounterActivity::class.java).also {
                 startActivity(it)
             }
         }
         binding.mealsViewBTN.setOnClickListener {
-            Intent(this,MealsActivity::class.java).also {
+            Intent(this, MealsActivity::class.java).also {
                 startActivity(it)
             }
         }
         binding.inputFormViewBTN.setOnClickListener {
-            Intent(this,InputFormActivity::class.java).also {
+            Intent(this, InputFormActivity::class.java).also {
                 startActivity(it)
             }
         }
 
         binding.BTNPassingData.setOnClickListener {
-            Intent(this,PassingDataFirstActivity::class.java).also {
+            Intent(this, PassingDataFirstActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.BTNAskPermission.setOnClickListener {
+            Intent(this, PermissionActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.BTNPickImage.setOnClickListener {
+            Intent(this, PickImageActivity::class.java).also {
                 startActivity(it)
             }
         }

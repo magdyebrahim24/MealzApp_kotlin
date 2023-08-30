@@ -83,13 +83,38 @@
         android:id="@+id/BTNPassingData"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/darkGrey"
         android:text="Passing Data"
-        android:layout_marginTop="20dp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputFormViewBTN" />
+
+    <Button
+        android:id="@+id/BTNAskPermission"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Ask Permissions"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNPassingData" />
+
+    <Button
+        android:id="@+id/BTNPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Pick Image"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNAskPermission" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

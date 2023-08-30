@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".MealsApplication"
@@ -15,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MealzApp"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.PickImageActivity"
+            android:exported="true"/>
         <activity
             android:name=".activities.CounterActivity"
             android:exported="false" />
@@ -32,6 +38,9 @@
             android:exported="false" />
         <activity
             android:name=".passing_data.PassingDataSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PermissionActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
