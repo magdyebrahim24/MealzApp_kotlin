@@ -28,6 +28,12 @@
             android:name=".meals.MealsActivity"
             android:exported="false" />
         <activity
+            android:name=".passing_data.PassingDataFirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".passing_data.PassingDataSecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

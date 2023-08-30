@@ -31,7 +31,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginVertical="20dp"
-        android:background="@color/darkGrey"
+        android:backgroundTint="@color/darkGrey"
         android:text="Meals View"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
         android:layout_height="50dp"
         android:layout_marginVertical="20dp"
         android:layout_marginTop="112dp"
-        android:background="@color/darkGrey"
+        android:backgroundTint="@color/darkGrey"
         android:text="Input Form View"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:layout_height="50dp"
         android:layout_marginVertical="20dp"
         android:layout_marginTop="64dp"
-        android:background="@color/darkGrey"
+        android:backgroundTint="@color/darkGrey"
         android:text="Counter View"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,14 +71,25 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginVertical="20dp"
-        android:layout_marginTop="108dp"
-        android:background="@color/darkGrey"
+        android:backgroundTint="@color/darkGrey"
         android:text="Toast View"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/BTNPassingData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Passing Data"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFormViewBTN" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

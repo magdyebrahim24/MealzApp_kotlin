@@ -9,6 +9,7 @@ import com.example.mealzapp.activities.InputFormActivity
 import com.example.mealzapp.activities.ToastActivity
 import com.example.mealzapp.databinding.ActivityMainBinding
 import com.example.mealzapp.meals.MealsActivity
+import com.example.mealzapp.passing_data.PassingDataFirstActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -39,6 +40,12 @@ class MainActivity : AppCompatActivity() {
         }
         binding.inputFormViewBTN.setOnClickListener {
             Intent(this,InputFormActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.BTNPassingData.setOnClickListener {
+            Intent(this,PassingDataFirstActivity::class.java).also {
                 startActivity(it)
             }
         }
