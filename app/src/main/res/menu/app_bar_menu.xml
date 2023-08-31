@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/miSetting"
+        android:title="Setting"
+        android:tooltipText="Setting"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_setting"
+        android:iconTint="@color/white"
+        />
+
+    <item
+        android:id="@+id/miNotification"
+        android:title="Notification"
+        android:tooltipText="Notification"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_notification"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/miInfo"
+        android:title="About App"
+        android:tooltipText="About App"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_info_circle"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/miAddBookMark"
+        android:title="Add Book Mark"
+        android:tooltipText="Add Book Mark"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_add_bookmark"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/miFavorite"
+        android:title="Add To Favorite"
+        android:tooltipText="Add To Favorite"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_star_outline"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/miClose"
+        android:title="Close App"
+        android:tooltipText="Close App"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_setting"
+        android:iconTint="@color/white"
+        />
+</menu>

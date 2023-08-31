@@ -4,6 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import com.example.mealzapp.activities.CounterActivity
 import com.example.mealzapp.activities.InputFormActivity
 import com.example.mealzapp.activities.PermissionActivity
@@ -19,11 +22,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
 
         binding.toastViewBTN.setOnClickListener {
             Intent(this, ToastActivity::class.java).also {
@@ -64,6 +67,34 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.app_bar_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        println("item.itemId ${item.itemId}")
+        when (item.itemId) {
+            R.id.miAddBookMark -> Toast.makeText(this, "Add Book Mark Success", Toast.LENGTH_SHORT)
+                .show()
+
+            R.id.miFavorite -> Toast.makeText(this, "Add To Favorite Success", Toast.LENGTH_SHORT)
+                .show()
+
+            R.id.miInfo -> Toast.makeText(this, "Set Information", Toast.LENGTH_SHORT).show()
+            R.id.miSetting -> Toast.makeText(this, "Go To Setting", Toast.LENGTH_SHORT).show()
+            R.id.miNotification -> Toast.makeText(this, "Receive Notification", Toast.LENGTH_SHORT)
+                .show()
+
+            R.id.miInfo -> Toast.makeText(this, "Test App Info Learn Android", Toast.LENGTH_SHORT)
+                .show()
+
+            R.id.miClose -> finish()
+        }
+        return true
     }
 
 }

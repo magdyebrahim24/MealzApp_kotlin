@@ -4,27 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:padding="20dp"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="160dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Learning Intent Activities"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/darkGrey"
+        android:minHeight="?attr/actionBarSize"
         android:textAlignment="center"
-        android:textColor="@color/darkGrey"
-        android:textSize="25sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Learning App"
+        app:titleTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/toastViewBTN"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Toast View"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/counterViewBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/BTNPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Pick Image"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNAskPermission"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/inputFormViewBTN"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Input Form View"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/BTNPassingData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealsViewBTN"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/counterViewBTN"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Counter View"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mealsViewBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastViewBTN"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/BTNPassingData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Passing Data"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/BTNAskPermission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFormViewBTN"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/BTNAskPermission"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="Ask Permissions"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/BTNPickImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNPassingData"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/mealsViewBTN"
@@ -34,87 +113,12 @@
         android:backgroundTint="@color/darkGrey"
         android:text="Meals View"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/counterViewBTN" />
-
-    <Button
-        android:id="@+id/inputFormViewBTN"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginVertical="20dp"
-        android:layout_marginTop="112dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Input Form View"
-        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/inputFormViewBTN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mealsViewBTN" />
-
-    <Button
-        android:id="@+id/counterViewBTN"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginVertical="20dp"
-        android:layout_marginTop="64dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Counter View"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toastViewBTN" />
-
-    <Button
-        android:id="@+id/toastViewBTN"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginVertical="20dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Toast View"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/BTNPassingData"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Passing Data"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputFormViewBTN" />
-
-    <Button
-        android:id="@+id/BTNAskPermission"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Ask Permissions"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BTNPassingData" />
-
-    <Button
-        android:id="@+id/BTNPickImage"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/darkGrey"
-        android:text="Pick Image"
-        android:textColor="@color/white"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BTNAskPermission" />
+        app:layout_constraintTop_toBottomOf="@+id/counterViewBTN"
+        app:layout_constraintVertical_bias="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
