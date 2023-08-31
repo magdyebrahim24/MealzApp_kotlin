@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.mealzapp.activities.AlertActivity
 import com.example.mealzapp.activities.CounterActivity
 import com.example.mealzapp.activities.InputFormActivity
 import com.example.mealzapp.activities.PermissionActivity
@@ -63,6 +64,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.BTNPickImage.setOnClickListener {
             Intent(this, PickImageActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.BTNAlerts.setOnClickListener {
+            Intent(this,AlertActivity::class.java).also {
                 startActivity(it)
             }
         }
